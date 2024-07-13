@@ -1,12 +1,12 @@
-import me from "/me.jpeg";
-import { Skeleton } from '@mui/material'
+import me from "/me4.jpeg";
+import { Skeleton } from '@mui/material';
 import { useEffect, useState } from 'react';
 import Typewritter from 'typewriter-effect';
 
 function Home() {
 
     const [loading, setLoading] = useState(true);
-
+  
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false);
@@ -17,7 +17,8 @@ function Home() {
 
     return (
         <div className="py-10">
-            <h1 className='text-3xl font-semibold' style={{ color: '#0B785C' }}>Gilbert Munuo</h1>
+
+            <h1 className='text-3xl font-semibold' style={{ color: '#30c67c' }}>Gilbert Munuo</h1>
             <h2 className='font-medium font-serif text-xl'>
                 <Typewritter
                     options={{
@@ -37,7 +38,7 @@ function Home() {
                 </div>
             ) : (
                 <div className="relative mx-auto w-max mt-8">
-                    <img src={me} className='rounded-full h-80 sm:h-96 w-full object-fit sm:w-96 mx-auto' alt="Gilbert Munuo Image" />
+                    <img src={me} className='rounded-full h-80 sm:h-96 object-fit sm:w-96 mx-auto' alt="Gilbert Munuo Image" />
                 </div>
             )}
         </div>
