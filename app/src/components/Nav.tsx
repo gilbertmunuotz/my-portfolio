@@ -12,7 +12,7 @@ function Nav() {
                         <LightModeIcon />
                     </li>
                     <li className=''>
-                        <a className='text-white text-xl py-2 px-4 cursor-pointer rounded-lg shadow-md' href="#" target="_blank" rel="noopener noreferrer" style={{ backgroundColor: '#0B785C' }}>
+                        <a className='text-white text-xl py-2 px-4 cursor-pointer rounded-lg shadow-md' href="#" target="_blank" rel="noopener noreferrer" style={{ backgroundColor: '#30c67c' }}>
                             Resume
                         </a>
                     </li>
