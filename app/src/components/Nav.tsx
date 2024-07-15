@@ -9,7 +9,6 @@ function Nav() {
     const dispatch = useDispatch();
     const darkMode = useSelector((state: RootState) => state.theme.darkMode);
 
-
     return (
         <div className={`dark:bg-custom-black dark:text-white`}>
             <section className="mx-8">
@@ -23,7 +22,7 @@ function Nav() {
 
                         </li>
                         <li className='ml-2'>
-                            <a className='text-white text-xl py-2 px-4 cursor-pointer rounded-lg shadow-md' href="#" target="_blank" rel="noopener noreferrer" style={{ backgroundColor: '#30c67c' }}>
+                            <a className='text-white text-xl py-2 px-4 cursor-pointer rounded-lg shadow-md' href="Curriculum Vitae.pdf" target="_blank" rel="noopener noreferrer" style={{ backgroundColor: '#30c67c' }}>
                                 Resume
                             </a>
                         </li>

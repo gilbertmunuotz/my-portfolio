@@ -4,7 +4,7 @@ import Services from "./components/Tech";
 import { useSelector } from "react-redux";
 import { RootState } from "./library/store";
 import BottomNav from "./components/BottomNav";
-import Collections from "./components/Collections";
+import Collections from "./components/Projects";
 
 function App() {
 

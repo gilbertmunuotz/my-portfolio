@@ -20,7 +20,7 @@ function Tech() {
         <div className={`dark:bg-custom-black dark:text-white`}>
             <div className="mx-8 pt-5">
                 <h1 className='text-3xl font-semibold' style={{ color: '#30c67c' }}>Technologies I Use</h1>
-                <p className="text-xl leading-8">There's a proverb that says "<em>Give a man the right tools and he will finish the job</em>",😂 Conceding that, the tech I use Include;</p>
+                <p className="text-xl leading-7">There's a proverb that says "<em>Give a man the right tools and he will finish the job</em>",😂 Conceding that, the tech I use Include;</p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center mt-4">
                     <Html5Original size={70} className="mx-auto" />
                     <Css3Original size={70} className="mx-auto" />
