@@ -33,7 +33,7 @@ function Collections() {
             <a href="https://dukani-eight.vercel.app" target="_blank" rel="noopener noreferrer">
               <img src={cyra} alt="Portfolio app 1" />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://my-tours-three.vercel.app" target="_blank" rel="noopener noreferrer">
               <img src={johnD} alt="Portfolio app 2" />
             </a>
             <a href="https://workspace-vf.vercel.app" target="_blank" rel="noopener noreferrer">

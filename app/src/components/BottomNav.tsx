@@ -7,7 +7,7 @@ function BottomNav() {
     <div className="dark:bg-custom-black dark:text-white">
       <section className="mx-8 pt-10">
         <h1 className="text-left text-3xl font-semibold" style={{ color: '#30c67c' }}>Contact</h1>
-        <div className="mt-4">
+        <div className="mt-1">
           <h2 className="text-left text-xl leading-7">Any Inquiries? Don't hesitate, mail me{' '}
             <a
               href="mailto:officialgilbert45@gmail.com"
@@ -20,7 +20,7 @@ function BottomNav() {
         </div>
 
         <div className="footer">
-          <div className="flex flex-col sm:flex-row justify-between py-14">
+          <div className="flex flex-col sm:flex-row justify-between py-20">
             <div className="space-x-6" style={{ color: '#30c67c' }}>
               <a href="https://github.com/gilbertmunuotz" target="_blank" rel="noopener noreferrer">
                 <GitHubIcon />
