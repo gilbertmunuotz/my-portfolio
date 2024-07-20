@@ -34,7 +34,7 @@ function Home() {
 
                 {loading ? (
                     <div className="flex justify-center items-center">
-                        <Skeleton variant='circular' width={450} height={450} animation={"wave"} />
+                        <Skeleton variant='circular' width={450} height={400} animation={"wave"} />
                     </div>
                 ) : (
                     <div className="relative mx-auto w-max mt-8">

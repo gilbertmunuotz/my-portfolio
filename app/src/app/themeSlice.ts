@@ -1,10 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { ThemeState } from "../interfaces/interfaces";
 
+
+// Check the user's preferred color scheme
+const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+
 //Define the initial state (Assumming) is Light Mode
 const initialState: ThemeState = {
-    darkMode: false,
+    darkMode: prefersDarkMode,
 }
+
 
 //Create slice Here
 const themeSlice = createSlice({

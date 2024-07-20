@@ -13,7 +13,7 @@ function Nav() {
         <div className={`dark:bg-custom-black dark:text-white`}>
             <section className="mx-8">
                 <nav className='py-10 flex justify-between'>
-                    <h1 className='text-xl animate-bounce'>gilbertmunuotz</h1>
+                    <h1 className='text-xl sm:animate-bounce'>gilbertmunuotz</h1>
                     <ul className='flex items-center'>
                         <li>
                             <button onClick={() => dispatch(toggleDarkMode())}>
