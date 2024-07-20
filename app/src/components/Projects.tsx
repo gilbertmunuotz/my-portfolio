@@ -30,15 +30,39 @@ function Collections() {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center mt-4">
-            <a href="https://dukani-eight.vercel.app" target="_blank" rel="noopener noreferrer">
+
+            <section className="rounded-lg shadow-xl py-6">
               <img src={cyra} alt="Portfolio app 1" />
-            </a>
-            <a href="https://my-tours-three.vercel.app" target="_blank" rel="noopener noreferrer">
+              <div className="flex justify-between">
+                <p className="text-xl mt-3 font-bold" style={{ color: '#30c67c' }}>Cyra Recipe</p>
+                <button type="button" className="mt-2 bg-green-600 py-1 rounded-lg px-2 text-lg">
+                  <a href="https://dukani-eight.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </button>
+              </div>
+            </section>
+
+
+            <section className="rounded-lg shadow-xl py-6">
               <img src={johnD} alt="Portfolio app 2" />
-            </a>
-            <a href="https://workspace-vf.vercel.app" target="_blank" rel="noopener noreferrer">
+              <div className="flex justify-between">
+                <p className="text-xl mt-3 font-bold" style={{ color: '#30c67c' }}>John Deere</p>
+                <button type="button" className="mt-2 bg-green-600 py-1 rounded-lg px-2 text-lg">
+                  <a href="https://my-tours-three.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </button>
+              </div>
+            </section>
+
+
+            <section className="rounded-lg shadow-xl py-6">
               <img src={workspace} alt="Portfolio app 2" />
-            </a>
+              <div className="flex justify-between">
+                <p className="text-xl mt-3 font-bold" style={{ color: '#30c67c' }}>WorkSpace</p>
+                <button type="button" className="mt-2 bg-green-600 py-1 rounded-lg px-2 text-lg">
+                  <a href="https://workspace-vf.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </button>
+              </div>
+            </section>
+
           </div>
         )}
       </section >

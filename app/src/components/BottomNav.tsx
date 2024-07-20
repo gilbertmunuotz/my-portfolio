@@ -20,7 +20,7 @@ function BottomNav() {
         </div>
 
         <div className="footer">
-          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-16 sm:space-y-0 space-y-4 sm:mx-0 mx-4">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-20 sm:space-y-0 space-y-4 sm:mx-0 mx-4">
             <div className="space-x-6 text-center" style={{ color: '#30c67c' }}>
               <a href="https://github.com/gilbertmunuotz" target="_blank" rel="noopener noreferrer">
                 <GitHubIcon />
