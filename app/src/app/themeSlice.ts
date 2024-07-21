@@ -8,7 +8,7 @@ const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matche
 
 //Define the initial state (Assumming) is Light Mode
 const initialState: ThemeState = {
-    darkMode: prefersDarkMode,
+    mode: prefersDarkMode,
 }
 
 
@@ -18,7 +18,7 @@ const themeSlice = createSlice({
     initialState,
     reducers: {
         toggleDarkMode(state) {
-            state.darkMode = !state.darkMode;
+            state.mode = !state.mode;
         },
     },
 });

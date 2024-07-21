@@ -7,7 +7,7 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 function Nav() {
 
     const dispatch = useDispatch();
-    const darkMode = useSelector((state: RootState) => state.theme.darkMode);
+    const mode = useSelector((state: RootState) => state.theme.mode);
 
     return (
         <div className={`dark:bg-custom-black dark:text-white`}>
@@ -17,7 +17,7 @@ function Nav() {
                     <ul className='flex items-center'>
                         <li>
                             <button onClick={() => dispatch(toggleDarkMode())}>
-                                {darkMode ? <LightModeIcon /> : <DarkModeIcon />}
+                                {mode ? <LightModeIcon /> : <DarkModeIcon />}
                             </button>
 
                         </li>

@@ -8,11 +8,11 @@ import Collections from "./components/Projects";
 
 function App() {
 
-  const darkMode = useSelector((state: RootState) => state.theme.darkMode);
+  const mode = useSelector((state: RootState) => state.theme.mode);
 
   return (
     <>
-      <div className={darkMode ? 'dark dark:bg-black dark:text-white' : 'bg-white text-black'}>
+      <div className={mode ? 'dark dark:bg-black dark:text-white' : 'bg-white text-black'}>
         <div className="min-h-screen mx-auto">
           <Nav />
           <Home />
