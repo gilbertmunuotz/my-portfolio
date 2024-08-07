@@ -22,7 +22,7 @@ function Nav() {
 
                         </li>
                         <li className='ml-2'>
-                            <a className='text-white text-xl py-2 px-4 cursor-pointer rounded-lg shadow-md' href="Curriculum Vitae.pdf" target="_blank" rel="noopener noreferrer" style={{ backgroundColor: '#30c67c' }}>
+                            <a className='text-white text-xl py-2 px-4 cursor-pointer rounded-full shadow-md' href="Curriculum Vitae.pdf" target="_blank" rel="noopener noreferrer" style={{ backgroundColor: '#30c67c' }}>
                                 Resume
                             </a>
                         </li>
