@@ -1,6 +1,6 @@
 import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import InstagramIcon from '@mui/icons-material/Instagram';
+// import InstagramIcon from '@mui/icons-material/Instagram';
 
 function BottomNav() {
   return (
@@ -28,9 +28,9 @@ function BottomNav() {
               <a href="https://twitter.com/gilbertmunuotz" target="_blank" rel="noopener noreferrer">
                 <XIcon />
               </a>
-              <a href="https://instagram.com/gilbertmunuotz" target="_blank" rel="noopener noreferrer">
+              {/* <a href="https://instagram.com/gilbertmunuotz" target="_blank" rel="noopener noreferrer">
                 <InstagramIcon />
-              </a>
+              </a> */}
             </div>
 
             <div className="text-center">
