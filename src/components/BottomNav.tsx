@@ -34,7 +34,7 @@ function BottomNav() {
             </div>
 
             <div className="text-center">
-              <p className="text-lg leading-7">&copy; 2023, All right Reserved.</p>
+              <p className="text-lg leading-7">&copy; 2025, All right Reserved.</p>
             </div>
           </div>
         </div>
