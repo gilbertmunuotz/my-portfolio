@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "./library/store";
 import BottomNav from "./components/BottomNav";
 import Collections from "./components/Projects";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Services />
           <Collections />
           <BottomNav />
+          <Analytics />
         </div>
       </div>
     </>
