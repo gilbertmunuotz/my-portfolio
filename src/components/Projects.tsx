@@ -1,8 +1,9 @@
 import Tanair from "/tanair.png";
+import Fizbuzz from "/fizbuzz.png";
 import MyNote from '/my note 2.png';
-import cyra from '/cyra recipe 2.png';
-import johnD from '/john deere 2.png';
 import Remoteok from "/remoteok.png";
+import johnD from '/john deere 2.png';
+import cyra from '/cyra recipe 2.png';
 import { Skeleton } from '@mui/material';
 import { useEffect, useState } from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -33,6 +34,7 @@ function Collections() {
             <Skeleton variant="rectangular" width={400} height={300} animation="wave" />
             <Skeleton variant="rectangular" width={400} height={300} animation="wave" />
             <Skeleton variant="rectangular" width={400} height={300} animation="wave" />
+            <Skeleton variant="rectangular" width={400} height={300} animation="wave" />
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center mt-4">
@@ -40,11 +42,16 @@ function Collections() {
             <section className="rounded-lg shadow-xl py-6">
               <img src={Tanair} alt="Portfolio app 3" />
               <div className="flex justify-between">
-                <p className="text-xl mt-3 font-bold" style={{ color: '#30c67c' }}>Tanair</p>
-                <button type="button" className="mt-2 bg-green-600 py-1 rounded-full px-2 text-lg space-x-2">
+                <p className="text-xl mt-3 font-bold ml-2" style={{ color: '#30c67c' }}>Tanair</p>
+                <a
+                  href="https://tanair-v1.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 bg-green-600 py-1 rounded-full px-2 text-lg space-x-2 mr-2 flex items-center text-white">
                   <CollectionsBookmarkIcon />
-                  <a href="https://tanair-v1.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a>
-                </button>
+                  <span>Demo</span>
+                </a>
+
               </div>
             </section>
 
@@ -52,44 +59,76 @@ function Collections() {
             <section className="rounded-lg shadow-xl py-6">
               <img src={johnD} alt="Portfolio app 2" />
               <div className="flex justify-between">
-                <p className="text-xl mt-3 font-bold" style={{ color: '#30c67c' }}>John Deere</p>
-                <button type="button" className="mt-2 bg-green-600 py-1 rounded-full px-2 text-lg space-x-2">
+                <p className="text-xl mt-3 font-bold ml-2" style={{ color: '#30c67c' }}>John Deere</p>
+                <a
+                  href="https://my-tours-three.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 bg-green-600 py-1 rounded-full px-2 text-lg space-x-2 mr-2 flex items-center text-white">
                   <CollectionsBookmarkIcon />
-                  <a href="https://my-tours-three.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a>
-                </button>
+                  <span>Demo</span>
+                </a>
               </div>
             </section>
 
             <section className="rounded-lg shadow-xl py-6">
               <img src={MyNote} alt="Portfolio app 3" />
               <div className="flex justify-between">
-                <p className="text-xl mt-3 font-bold" style={{ color: '#30c67c' }}>My Note</p>
-                <button type="button" className="mt-2 bg-green-600 py-1 rounded-full px-2 text-lg space-x-2">
+                <p className="text-xl mt-3 font-bold ml-2" style={{ color: '#30c67c' }}>My Note</p>
+                <a
+                  href="https://mynote-client.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 bg-green-600 py-1 rounded-full px-2 text-lg space-x-2 mr-2 flex items-center text-white">
                   <CollectionsBookmarkIcon />
-                  <a href="https://mynote-client.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a>
-                </button>
+                  <span>Demo</span>
+                </a>
               </div>
             </section>
 
             <section className="rounded-lg shadow-xl py-6">
               <img src={cyra} alt="Portfolio app 1" />
               <div className="flex justify-between">
-                <p className="text-xl mt-3 font-bold" style={{ color: '#30c67c' }}>Cyra Recipe</p>
-                <button type="button" className="mt-2 bg-green-600 py-1 rounded-full px-2 text-lg space-x-2">
+                <p className="text-xl mt-3 font-bold ml-2" style={{ color: '#30c67c' }}>Cyra Recipe</p>
+                <a
+                  href="https://dukani-eight.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 bg-green-600 py-1 rounded-full px-2 text-lg space-x-2 mr-2 flex items-center text-white">
                   <CollectionsBookmarkIcon />
-                  <a href="https://dukani-eight.vercel.app" target="_blank" rel="noopener noreferrer">Demo</a>
-                </button>
+                  <span>Demo</span>
+                </a>
               </div>
             </section>
 
             <section className="rounded-lg shadow-xl py-6">
               <img src={Remoteok} alt="Portfolio app 3" />
               <div className="flex justify-between mt-8">
-                <p className="text-xl mt-3 font-bold" style={{ color: '#30c67c' }}>Tanair</p>
-                <button type="button" className="mt-2 bg-green-600 py-1 rounded-full px-2 text-lg space-x-2">
+                <p className="text-xl mt-3 font-bold ml-2" style={{ color: '#30c67c' }}>Remoteok</p>
+                <a
+                  href="https://github.com/gilbertmunuotz/remoteok"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 bg-green-600 py-1 rounded-full px-2 text-lg space-x-2 mr-2 flex items-center text-white">
                   <GitHubIcon />
-                  <a href="https://github.com/gilbertmunuotz/remoteok" target="_blank" rel="noopener noreferrer">Github</a>
-                </button>
+                  <span>Github</span>
+                </a>
+              </div>
+            </section>
+
+
+            <section className="rounded-lg shadow-xl py-6">
+              <img src={Fizbuzz} alt="Portfolio app 1" />
+              <div className="flex justify-between">
+                <p className="text-xl mt-3 font-bold ml-2" style={{ color: '#30c67c' }}>Fizbuzz</p>
+                <a
+                  href="https://fizbuz-delta.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 bg-green-600 py-1 rounded-full px-2 text-lg space-x-2 mr-2 flex items-center text-white">
+                  <CollectionsBookmarkIcon />
+                  <span>Demo</span>
+                </a>
               </div>
             </section>
 
