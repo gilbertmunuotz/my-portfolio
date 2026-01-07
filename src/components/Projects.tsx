@@ -1,8 +1,9 @@
-import Tanair from "/tanair.png";
-import Fizbuzz from "/fizbuzz.png";
-import MyNote from '/my note 2.png';
+// import Tanair from "/tanair.png";
+// import Fizbuzz from "/fizbuzz.png";
+// import MyNote from '/my note 2.png';
+import Momentam from '/momentam.png';
 import Remoteok from "/remoteok.png";
-import johnD from '/john deere 2.png';
+// import johnD from '/john deere 2.png';
 import cyra from '/cyra recipe 2.png';
 import { Skeleton } from '@mui/material';
 import { useEffect, useState } from "react";
@@ -32,14 +33,14 @@ function Collections() {
             <Skeleton variant="rectangular" width={400} height={300} animation="wave" />
             <Skeleton variant="rectangular" width={400} height={300} animation="wave" />
             <Skeleton variant="rectangular" width={400} height={300} animation="wave" />
+            {/* <Skeleton variant="rectangular" width={400} height={300} animation="wave" />
             <Skeleton variant="rectangular" width={400} height={300} animation="wave" />
-            <Skeleton variant="rectangular" width={400} height={300} animation="wave" />
-            <Skeleton variant="rectangular" width={400} height={300} animation="wave" />
+            <Skeleton variant="rectangular" width={400} height={300} animation="wave" /> */}
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center mt-4">
 
-            <section className="rounded-lg shadow-xl py-6">
+            {/* <section className="rounded-lg shadow-xl py-6">
               <img src={Tanair} alt="Portfolio app 3" />
               <div className="flex justify-between">
                 <p className="text-xl mt-3 font-bold ml-2" style={{ color: '#30c67c' }}>Tanair</p>
@@ -53,15 +54,15 @@ function Collections() {
                 </a>
 
               </div>
-            </section>
+            </section> */}
 
 
             <section className="rounded-lg shadow-xl py-6">
-              <img src={johnD} alt="Portfolio app 2" />
+              <img src={Momentam} alt="Portfolio app 2" />
               <div className="flex justify-between">
-                <p className="text-xl mt-3 font-bold ml-2" style={{ color: '#30c67c' }}>John Deere</p>
+                <p className="text-xl mt-3 font-bold ml-2" style={{ color: '#30c67c' }}>Momentam</p>
                 <a
-                  href="https://my-tours-three.vercel.app"
+                  href="https://www.momentam.io"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-2 bg-green-600 py-1 rounded-full px-2 text-lg space-x-2 mr-2 flex items-center text-white">
@@ -71,7 +72,7 @@ function Collections() {
               </div>
             </section>
 
-            <section className="rounded-lg shadow-xl py-6">
+            {/* <section className="rounded-lg shadow-xl py-6">
               <img src={MyNote} alt="Portfolio app 3" />
               <div className="flex justify-between">
                 <p className="text-xl mt-3 font-bold ml-2" style={{ color: '#30c67c' }}>My Note</p>
@@ -84,7 +85,7 @@ function Collections() {
                   <span>Demo</span>
                 </a>
               </div>
-            </section>
+            </section> */}
 
             <section className="rounded-lg shadow-xl py-6">
               <img src={cyra} alt="Portfolio app 1" />
@@ -117,7 +118,7 @@ function Collections() {
             </section>
 
 
-            <section className="rounded-lg shadow-xl py-6">
+            {/* <section className="rounded-lg shadow-xl py-6">
               <img src={Fizbuzz} alt="Portfolio app 1" />
               <div className="flex justify-between">
                 <p className="text-xl mt-3 font-bold ml-2" style={{ color: '#30c67c' }}>Fizbuzz</p>
@@ -130,7 +131,7 @@ function Collections() {
                   <span>Demo</span>
                 </a>
               </div>
-            </section>
+            </section> */}
 
           </div>
         )}

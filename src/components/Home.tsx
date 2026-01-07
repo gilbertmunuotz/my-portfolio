@@ -32,7 +32,7 @@ function Home() {
                 </h2>
 
 
-                <p className="pt-10 pb-5 text-left text-xl leading-7 first-letter:text-2xl first-letter:font-bold">A full-stack developer with over two years of experience building scalable web and mobile applications. I specialize in crafting secure, efficient solutions using modern technologies like React Native, NextJS, Prisma, and MySQL. From optimizing performance in large datasets to implementing robust authentication systems, I thrive on solving challenging problems and delivering impactful results.Always eager to learn and grow, I’m exploring emerging technologies like blockchain to stay ahead in the industry. I value collaboration and innovation, working well in dynamic environments to create meaningful, user-focused solutions.
+                <p className="pt-10 pb-5 text-left text-xl leading-7 first-letter:text-2xl first-letter:font-bold">A full-stack developer with over four years of experience building scalable web and mobile applications. I specialize in crafting secure, efficient solutions using modern technologies like React Native, NextJS, Prisma, and MySQL. From optimizing performance in large datasets to implementing robust authentication systems, I thrive on solving challenging problems and delivering impactful results. Always eager to learn and grow, I’m exploring emerging technologies like blockchain to stay ahead in the industry. I value collaboration and innovation, working well in dynamic environments to create meaningful, user-focused solutions.
                 </p>
 
                 {loading ? (
