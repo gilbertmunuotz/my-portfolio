@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Home() {
     return (
-        <div className='mx-8'>
+        <section className='mx-12'>
             <div className='py-10 flex justify-between'>
                 <div>
                     <span className="text-base text-green-500 font-medium">
@@ -21,6 +21,6 @@ export default function Home() {
                     Always eager to learn and grow, I value collaboration and innovation, working well in dynamic environments to create meaningful, user-focused solutions.
                 </p>
             </div>
-        </div >
+        </section >
     )
 }
