@@ -4,7 +4,7 @@ import { Server, Globe, Smartphone, Database } from "lucide-react"
 
 export default function Page() {
     return (
-        <section className="mx-12">
+        <section className="mx-14">
             <div className="my-5">
                 {/* Section Header */}
                 <div className="mb-12">

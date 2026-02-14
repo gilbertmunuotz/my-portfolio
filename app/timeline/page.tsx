@@ -1,7 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { motion } from "framer-motion";
 
 const experiences = [
     {
@@ -44,11 +43,11 @@ const techStack = [
 
 export default function ExperienceTimeline() {
     return (
-        <section className="py-24 px-6">
-            <div className="max-w-6xl mx-auto">
+        <section className="mx-14">
+            <div className="py-24">
 
                 {/* Section Title */}
-                <h2 className="text-3xl font-bold mb-16">
+                <h2 className="text-3xl font-bold">
                     Professional <span className="text-green-500">Journey</span>
                 </h2>
 

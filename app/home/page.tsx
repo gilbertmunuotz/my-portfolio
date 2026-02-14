@@ -1,19 +1,6 @@
-import { ModeToggle } from '@/components/modeToggle'
-import React from 'react'
-
 export default function Home() {
     return (
-        <section className='mx-12'>
-            <div className='py-10 flex justify-between'>
-                <div>
-                    <span className="text-base text-green-500 font-medium">
-                        gilbertmunuotz
-                    </span>
-                </div>
-                <div>
-                    <ModeToggle />
-                </div>
-            </div >
+        <section className='mx-14'>
             <div>
                 <p className='py-2 text-left text-lg text-muted-foreground'>
                     A full-stack developer with over 4+ years of experience building scalable web and mobile applications. I specialize in crafting secure, efficient solutions using modern technologies like React Native, NextJS, Prisma, and MySQL.
