@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Inter } from 'next/font/google'
+import Script from "next/script"
 
 const inter = Inter({
   subsets: ['latin'],
@@ -29,31 +30,22 @@ export const metadata: Metadata = {
     url: "https://gilbertmunuotz.com",
     siteName: "Gilbert Munuo's Portfolio",
     type: "website",
+    images: [
+      {
+        url: "/me.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Gilbert Munuo - Full Stack Developer"
+      }
+    ]
   },
   twitter: {
     card: "summary_large_image",
     title: "Gilbert Munuo | Full-Stack Developer",
     description: "Full-stack developer specializing in scalable web and mobile applications.",
+    images: ["/me.jpg"]
   },
 };
-
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Person",
-      name: "Gilbert Munuo",
-      jobTitle: "Full Stack Developer",
-      url: "https://gilbertmunuotz.com",
-      sameAs: [
-        "https://github.com/gilbertmunuotz",
-        "https://x.com/gilbertmunuotz",
-        "https://instagram.com/gilbertmunuotz"
-      ],
-    }),
-  }}
-/>
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode }>) {
   return (
@@ -67,6 +59,26 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
         >
           {children}
         </ThemeProvider>
+
+        <Script
+          id="person-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Gilbert Munuo",
+              jobTitle: "Full Stack Developer",
+              url: "https://gilbertmunuotz.com",
+              sameAs: [
+                "https://github.com/gilbertmunuotz",
+                "https://x.com/gilbertmunuotz",
+                "https://instagram.com/gilbertmunuotz"
+              ],
+            }),
+          }}
+        />
+
       </body>
     </html>
   );

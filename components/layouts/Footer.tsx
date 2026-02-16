@@ -3,7 +3,7 @@ import { SiGithub, SiX } from '@icons-pack/react-simple-icons';
 export default function Footer() {
     return (
         <footer className="border-t py-12">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 px-6 sm:px-8 lg:px-12 text-sm text-muted-foreground">
 
                 <div>
                     © {new Date().getFullYear()} All rights reserved.

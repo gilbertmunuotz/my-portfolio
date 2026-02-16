@@ -1,11 +1,11 @@
-import HomeComponent from './home/page';
-import ImageComponent from "./image/page";
-import ServiceComponent from "./services/page";
-import TimelineComponent from "./timeline/page";
-import ProjectComponent from "./projects/page";
-import ContactComponent from "./contact/page";
-import NavbarComponent from "./Navbar/page";
-import FooterComponent from "./footer/page";
+import HomeComponent from '../components/sections/Home';
+import ImageComponent from "../components/sections/Image";
+import ServiceComponent from "../components/sections/Services";
+import TimelineComponent from "../components/sections/Timeline";
+import ProjectComponent from "../components/sections/Projects";
+import ContactComponent from "../components/sections/Contact";
+import NavbarComponent from "../components/layouts/Navbar";
+import FooterComponent from "../components/layouts/Footer";
 
 export default function page() {
   return (
