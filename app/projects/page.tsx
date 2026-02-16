@@ -2,6 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { motion } from "framer-motion"
 
 const projects = [
   {
@@ -36,19 +37,22 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section className="py-24 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-16 md:py-24">
+      <h2 className="text-3xl font-bold tracking-tight mb-4">
+        Latest <span className="text-green-500">Projects</span>
+      </h2>
 
-        <h2 className="text-3xl font-bold mb-16">
-          Selected <span className="text-green-500">Projects</span>
-        </h2>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map((project, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            viewport={{ once: false }}
+          >
+            <Card className="transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <Card
-              key={index}
-              className="transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
-            >
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
               </CardHeader>
@@ -78,9 +82,10 @@ export default function ProjectsSection() {
                 </Button>
               </CardContent>
             </Card>
-          ))}
-        </div>
+          </motion.div>
+        ))}
       </div>
+
     </section>
   )
 }

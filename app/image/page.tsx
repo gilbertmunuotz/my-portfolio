@@ -9,7 +9,7 @@ export default function Page() {
     const [Loading, setLoading] = useState(true)
 
     return (
-        <section className="relative mx-auto w-80 h-80 sm:w-96 sm:h-96 mt-8">
+        <section className="relative mx-auto w-80 h-80 sm:w-96 sm:h-96 mt-14">
 
             {Loading && (
                 <Skeleton className="absolute inset-0 rounded-full" />

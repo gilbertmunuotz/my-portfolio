@@ -2,17 +2,14 @@ import { ModeToggle } from '@/components/modeToggle'
 
 export default function page() {
     return (
-        <div>
-            <div className='max-w-6xl mx-auto py-10 flex justify-between'>
-                <div>
-                    <span className="text-base text-green-500 font-medium">
-                        gilbertmunuotz
-                    </span>
-                </div>
-                <div>
-                    <ModeToggle />
-                </div>
-            </div >
-        </div>
+        <section>
+            <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 h-20 flex items-center justify-between">
+                <span className="text-base font-semibold text-green-500">
+                    gilbertmunuotz
+                </span>
+
+                <ModeToggle />
+            </div>
+        </section >
     )
 }

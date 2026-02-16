@@ -11,7 +11,7 @@ export default function page() {
   return (
     <main className="w-full">
       <NavbarComponent/>
-      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <HomeComponent />
         <ImageComponent />
         <ServiceComponent />

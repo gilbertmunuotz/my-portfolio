@@ -2,8 +2,8 @@ import { SiGithub, SiX } from '@icons-pack/react-simple-icons';
 
 export default function Footer() {
     return (
-        <footer className="border-t py-10 px-6">
-            <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+        <footer className="border-t py-12">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
 
                 <div>
                     © {new Date().getFullYear()} All rights reserved.
@@ -15,7 +15,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         aria-label="GitHub profile"
                     >
-                        <SiGithub title="GitHub" size={28} className="hover:scale-110 transition-transform" />
+                        <SiGithub title="GitHub" size={28} className="hover:scale-110 hover:text-green-500 transition-transform" />
                     </a>
 
                     <a
@@ -24,7 +24,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         aria-label="X profile"
                     >
-                        <SiX title="X" size={28} className="hover:scale-110 transition-transform" />
+                        <SiX title="X" size={28} className="hover:scale-110 hover:text-green-500 transition-transform" />
                     </a>
                 </div>
 
