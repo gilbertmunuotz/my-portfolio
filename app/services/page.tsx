@@ -76,8 +76,8 @@ export default function Page() {
                         </CardHeader>
                         <CardContent>
                             <CardDescription className="text-base">
-                                Building fast, scalable web applications with server-side rendering,
-                                performant routing and secure authentication & data flows.
+                                Building fast and scalable web applications with server-side rendering,
+                               high performant routing and secure authentication & data flows.
                             </CardDescription>
                         </CardContent>
                     </Card>

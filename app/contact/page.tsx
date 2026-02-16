@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Mail } from "lucide-react"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 export default function ContactSection() {
   return (
@@ -23,11 +24,17 @@ export default function ContactSection() {
         </p>
 
         <Button
+          asChild
           size="lg"
-          className="bg-green-500 hover:bg-green-600 text-white cursor-pointer"
+          className="bg-green-500 hover:bg-green-600 text-white"
         >
-          <Mail className="mr-2 h-4 w-4" />
-          Contact Me
+          <Link
+            href="mailto:officialgilbert45@gmail.com"
+            className="flex items-center gap-2"
+          >
+            <Mail className="h-5 w-5" />
+            Contact Me
+          </Link>
         </Button>
       </motion.div>
     </section>

@@ -34,13 +34,12 @@ const experiences = [
 ]
 
 const techStack = [
-    "Next.js",
+    "Next Js",
     "React Native",
     "Prisma",
     "MySQL",
     "JWT Auth",
-    "REST APIs",
-    "TailwindCSS",
+    "REST API's",
     "Tailwind CSS",
     "TypeScript",
     "Java",
@@ -48,6 +47,7 @@ const techStack = [
     "React",
     "Spring Boot",
     "PostgreSQL",
+    "Native wind",
     "Framer Motion",
     "Material UI",
     "Expo",

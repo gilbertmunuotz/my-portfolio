@@ -3,35 +3,38 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
+import { ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: "Momentam Apps",
-    description:
-      "Minimalist digital wallet for students with JWT authentication, secure PIN transactions, and analytics.",
-    tech: ["React Native", "WebSockets", "JWT"],
+    title: "Momentam Mobile Apps",
+    description: "Real-time event photography marketplace where users can book photographers, select photo packages, and receive images instantly, while photographers manage bookings and deliver photos seamlessly.",
+    tech: ["React Native", "Expo", "Node.js", "JWT", "REST API's"],
     link: "https://momentam.io",
   },
   {
     title: "emAI Conference Website",
-    description:
-      "Official event platform built for scalability and user engagement.",
-    tech: ["Next.js", "Prisma", "MySQL"],
+    description: "Official event platform for the EnhanceMind AI Conference, designed to support large-scale engagement, Hands-on Workshops, speaker showcases, Networking Opportunities and inclusive AI-focused programming.",
+    tech: ["Next.js", "Shadcn UI", "Framer Motion", "Tailwind CSS"],
     link: "https://emaiconference.com",
   },
   {
     title: "Fizbuz",
-    description:
-      "AI-powered chatbot app with local LLM integration and authentication system.",
-    tech: ["React.js", "MySQL", "Express.js", "Sequelize", "Chart.js"],
+    description: "A full-stack, responsive expense tracking web application with intuitive UI, featuring interactive income and expense visualizations, monthly summaries, categorized transaction management, and real-time updates.",
+    tech: ["React.js", "Redux Toolkit", "Express.js", "Sequelize", "Chart.js", "MySQL", "Render"],
     link: "https://fizbuz-delta.vercel.app/login",
   },
   {
-    title: "remoteok",
-    description:
-      "AI-powered chatbot app with local LLM integration and authentication system.",
+    title: "RemoteOK Mobile App",
+    description: "Mobile app that aggregates remote job listings from public APIs, allowing users to browse categorized opportunities and apply via external links.",
     tech: ["React Native", "Redux Toolkit", "Nativewind", "Expo"],
     link: "https://github.com/gilbertmunuotz/remoteok",
+  },
+  {
+    title: "Cyra Recipe",
+    description: "Online Recipe search application that retrieves detailed cooking instructions, ingredient lists and time frame based on user input queries. Just type in your ingredients or dish name and browse through a variety of recipes tailored to meet your needs.",
+    tech: ["React", "Tailwind CSS", "Vercel", "REST API's"],
+    link: "https://dukani-eight.vercel.app",
   },
 ]
 
@@ -74,11 +77,15 @@ export default function ProjectsSection() {
                 </div>
 
                 <Button
+                  asChild
                   variant="outline"
                   size="sm"
                   className="mt-2 hover:border-green-500 hover:text-green-500"
                 >
-                  View Project
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    View Project
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                  </a>
                 </Button>
               </CardContent>
             </Card>
