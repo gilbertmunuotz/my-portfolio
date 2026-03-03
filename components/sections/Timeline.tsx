@@ -67,7 +67,10 @@ const techStack = [
     "Railway",
     "Recharts",
     "Maven",
-    "Node Mailer"
+    "Node Mailer",
+    "HeroUI",
+    "Radix UI",
+    "Uniwind",
 ]
 
 export default function ExperienceTimeline() {
