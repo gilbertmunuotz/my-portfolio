@@ -4,12 +4,6 @@ import { motion } from "framer-motion";
 
 const experiences = [
     {
-        year: "2020 – 2023",
-        role: "Ordinary Diploma in IT",
-        company: "Dar es Salaam Institute of Technology",
-        url: "https://www.dit.ac.tz",
-    },
-    {
         year: "2023 – 2024",
         role: "Computer Technician",
         company: "WorkSpace Computers Limited",
@@ -27,10 +21,16 @@ const experiences = [
     },
     {
         year: "Oct 2025 – Present",
-        role: "Chief Technology Officer (CTO)",
+        role: "Lead Full-Stack Developer",
         company: "Momentam.io",
         url: "https://momentam.io",
     },
+    {
+        year: "March 2026 – Present",
+        role: "Lead Full-Stack Developer",
+        company: "SGI Africa",
+        url: "https://sgi-africa.com",
+    }
 ]
 
 const techStack = [
@@ -71,6 +71,7 @@ const techStack = [
     "HeroUI",
     "Radix UI",
     "Uniwind",
+    "i18n",
 ]
 
 export default function ExperienceTimeline() {
