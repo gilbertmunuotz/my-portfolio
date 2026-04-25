@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 
 const experiences = [
     {
-        year: "2023 – 2024",
+        year: "2023 - 2024",
         role: "Computer Technician",
         company: "WorkSpace Computers Limited",
     },
     {
-        year: "2024 – Present",
+        year: "2024 - Present",
         role: "Independent Full-Stack Developer (Contract)",
         company: "Freelance",
     },
@@ -20,13 +20,13 @@ const experiences = [
         url: "https://emaiconference.com",
     },
     {
-        year: "Oct 2025 – Present",
+        year: "Oct 2025 - Present",
         role: "Lead Full-Stack Developer",
         company: "Momentam.io",
         url: "https://momentam.io",
     },
     {
-        year: "March 2026 – Present",
+        year: "March 2026 - Present",
         role: "Lead Full-Stack Developer",
         company: "SGI Africa",
         url: "https://sgi-africa.com",

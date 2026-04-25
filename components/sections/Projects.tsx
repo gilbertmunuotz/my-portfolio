@@ -7,7 +7,7 @@ import { ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: "Momentam Mobile Apps",
+    title: "Momentam Apps(Web & Mobile)",
     description: "Real-time event photography marketplace where users can book photographers, select photo packages, and receive images instantly, while photographers manage bookings and deliver photos seamlessly.",
     tech: ["React Native", "Expo", "Node.js", "JWT", "REST API's"],
     link: "https://momentam.io",
@@ -32,10 +32,16 @@ const projects = [
   },
   {
     title: "Cyra Recipe",
-    description: "Online Recipe search application that retrieves detailed cooking instructions, ingredient lists and time frame based on user input queries. Just type in your ingredients or dish name and browse through a variety of recipes tailored to meet your needs.",
+    description: "Online Recipe search app that retrieves detailed cooking instructions, ingredient lists & time frame based on user input queries. Just type in your ingredients or dish name and browse through a variety of recipes tailored to meet your needs.",
     tech: ["React", "Tailwind CSS", "Vercel", "REST API's"],
     link: "https://dukani-eight.vercel.app",
   },
+  {
+    title: "SGI Apps(Web & Mobile)",
+    description: "A cross-platform digital VICOBA system enabling groups to manage savings, supporting contributions, and internal transactions seamlessly.",
+    tech: ["React", "React Native", "Expo", "Tailwind CSS", "Redux Toolkit", "REST APIs"],
+    link: "https://sgi-africa.com",
+  }
 ]
 
 export default function ProjectsSection() {
