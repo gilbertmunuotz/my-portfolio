@@ -1,152 +1,73 @@
-"use client"
-
-import { motion } from "framer-motion";
-
-const experiences = [
-    {
-        year: "2023 - 2024",
-        role: "Computer Technician",
-        company: "WorkSpace Computers Limited",
-    },
-    {
-        year: "2024 - Present",
-        role: "Independent Full-Stack Developer (Contract)",
-        company: "Freelance",
-    },
-    {
-        year: "June 2025 - September 2025",
-        role: "Developer - emAI Conference",
-        company: "EnhanceMind AI Conference",
-        url: "https://emaiconference.com",
-    },
-    {
-        year: "Oct 2025 - Present",
-        role: "Lead Full-Stack Developer",
-        company: "Momentam.io",
-        url: "https://momentam.io",
-    },
-    {
-        year: "March 2026 - Present",
-        role: "Lead Full-Stack Developer",
-        company: "SGI Africa",
-        url: "https://sgi-africa.com",
-    }
-]
-
-const techStack = [
-    "Next Js",
-    "React Native",
-    "Prisma",
-    "MySQL",
-    "JWT Auth",
-    "REST API's",
-    "Tailwind CSS",
-    "TypeScript",
-    "Java",
-    "Redux Toolkit",
-    "React",
-    "Spring Boot",
-    "PostgreSQL",
-    "Native wind",
-    "Framer Motion",
-    "Material UI",
-    "Expo",
-    "Express Js",
-    "Shadcn UI",
-    "Postman",
-    "Render",
-    "Sequelize",
-    "Material UI",
-    "Mongo DB",
-    "Git",
-    "Nest Js",
-    "WebSocket",
-    "Sonner",
-    "Vercel",
-    "Passport Js",
-    "Railway",
-    "Recharts",
-    "Maven",
-    "Node Mailer",
-    "HeroUI",
-    "Radix UI",
-    "Uniwind",
-    "i18n",
-]
+import { Reveal } from "@/components/ui/motion/reveal"
+import { StaggerList } from "@/components/ui/motion/stagger-list"
+import { Badge } from "@/components/ui/badge"
+import { Section, SectionHeader } from "@/components/ui/section"
+import { experiences } from "@/lib/data/experiences"
+import { techStack } from "@/lib/data/tech-stack"
 
 export default function ExperienceTimeline() {
-    return (
-        <section className="py-16 md:py-24">
-            {/* Section Title */}
-            <h1 className="text-3xl font-bold tracking-tight">
-                Professional <span className="text-green-500">Journey</span>
-            </h1>
+  return (
+    <Section
+      id="journey"
+      aria-labelledby="journey-heading"
+      className="scroll-mt-20"
+    >
+      <SectionHeader
+        id="journey-heading"
+        title="Professional"
+        accent="Journey"
+      />
 
-            <div className="grid md:grid-cols-2 gap-16 relative">
+      <div className="relative grid gap-16 md:grid-cols-2">
+        <div>
+          <h3 className="my-4 text-base font-semibold text-muted-foreground">
+            Core Technologies
+          </h3>
+          <StaggerList className="flex flex-wrap gap-3">
+            {techStack.map((tech) => (
+              <Badge
+                key={tech}
+                variant="outline"
+                className="px-3 py-1.5 text-sm font-normal"
+              >
+                {tech}
+              </Badge>
+            ))}
+          </StaggerList>
+        </div>
 
-                {/* LEFT SIDE – Tech Stack */}
-                <div>
-                    <h3 className="font-semibold text-muted-foreground my-4 text-base">Core Technologies</h3>
-                    <div className="flex flex-wrap gap-3">
-                        {techStack.map((tech, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.4, delay: index * 0.05 }}
-                                viewport={{ once: false }}
-                                className="px-4 py-2 text-sm border cursor-pointer rounded-lg hover:bg-green-500/10 transition"
-                            >
-                                {tech}
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
+        <div className="relative">
+          <div
+            className="absolute top-0 left-3 h-full w-px bg-border"
+            aria-hidden
+          />
 
-                {/* RIGHT SIDE – Timeline */}
-                <div className="relative">
-
-                    {/* Vertical Line */}
-                    <div className="absolute left-3 top-0 h-full w-px bg-border" />
-
-                    <div className="space-y-12">
-                        {experiences.map((exp, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, x: 30 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
-                                viewport={{ once: false }}
-                                className="relative pl-10"
-                            >
-                                {/* Dot */}
-                                <span className="absolute left-0 top-1.5 w-6 h-6 rounded-full border-2 border-green-500 bg-background" />
-
-                                <p className="text-sm text-green-500 font-medium">
-                                    {exp.year}
-                                </p>
-                                <h4 className="font-semibold">{exp.role}</h4>
-                                {exp.url ? (
-                                    <a
-                                        href={exp.url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-sm text-green-400 hover:text-green-500 transition-colors"
-                                    >
-                                        {exp.company}
-                                    </a>
-                                ) : (
-                                    <p className="text-sm text-muted-foreground">
-                                        {exp.company}
-                                    </p>
-                                )}
-                            </motion.div>
-                        ))}
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-    )
+          <div className="space-y-12">
+            {experiences.map((exp, index) => (
+              <Reveal key={exp.id} delay={index * 0.08} className="relative pl-10">
+                <span
+                  className="border-brand bg-background absolute top-1.5 left-0 h-6 w-6 rounded-full border-2"
+                  aria-hidden
+                />
+                <p className="text-sm font-medium text-brand">{exp.year}</p>
+                <h4 className="font-semibold">{exp.role}</h4>
+                {exp.url ? (
+                  <a
+                    href={exp.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-brand underline-offset-2 transition-opacity hover:opacity-90"
+                  >
+                    {exp.company}
+                  </a>
+                ) : (
+                  <p className="text-sm text-muted-foreground">{exp.company}</p>
+                )}
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Section>
+  )
 }

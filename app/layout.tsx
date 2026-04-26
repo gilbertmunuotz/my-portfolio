@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
-import { Inter } from 'next/font/google'
+import { ThemeProvider } from "@/components/theme-provider"
+import { MotionProvider } from "@/components/motion-provider"
+import { GeistMono } from "geist/font/mono"
+import { GeistSans } from "geist/font/sans"
+import { Newsreader } from "next/font/google"
 import Script from "next/script"
 
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-inter',
-  display: 'swap'
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-newsreader",
+  weight: ["400", "500", "600", "700"],
 })
 
 export const metadata: Metadata = {
@@ -32,7 +35,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/me.jpg",
+        url: "/me-1200.jpg",
         width: 1200,
         height: 630,
         alt: "Gilbert Munuo - Full Stack Developer"
@@ -43,13 +46,17 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Gilbert Munuo | Full-Stack Developer",
     description: "Full-stack developer specializing in scalable web and mobile applications.",
-    images: ["/me.jpg"]
+    images: ["/me-1200.jpg"]
   },
 };
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={inter.variable} suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${GeistSans.variable} ${GeistMono.variable} ${newsreader.variable}`}
+      suppressHydrationWarning
+    >
       <body>
         <ThemeProvider
           attribute="class"
@@ -57,7 +64,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <MotionProvider>{children}</MotionProvider>
         </ThemeProvider>
 
         <Script

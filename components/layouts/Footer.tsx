@@ -15,7 +15,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         aria-label="GitHub profile"
                     >
-                        <SiGithub title="GitHub" size={28} className="hover:scale-110 hover:text-green-500 transition-transform" />
+                        <SiGithub title="GitHub" size={28} className="hover:scale-110 hover:text-brand transition-transform" />
                     </a>
 
                     <a
@@ -24,7 +24,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         aria-label="X profile"
                     >
-                        <SiX title="X" size={28} className="hover:scale-110 hover:text-green-500 transition-transform" />
+                        <SiX title="X" size={28} className="hover:scale-110 hover:text-brand transition-transform" />
                     </a>
                 </div>
 

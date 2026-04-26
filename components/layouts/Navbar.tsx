@@ -1,15 +1,17 @@
-import { ModeToggle } from '@/components/modeToggle'
+import { ModeToggle } from "@/components/mode-toggle"
 
-export default function page() {
-    return (
-        <section>
-            <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 h-20 flex items-center justify-between">
-                <span className="text-base font-semibold text-green-500">
-                    gilbertmunuotz
-                </span>
-
-                <ModeToggle />
-            </div>
-        </section >
-    )
+export default function Navbar() {
+  return (
+    <header>
+      <nav
+        className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 sm:px-8 lg:px-12"
+        aria-label="Main"
+      >
+        <span className="font-display text-base font-semibold text-brand">
+          gilbertmunuotz
+        </span>
+        <ModeToggle />
+      </nav>
+    </header>
+  )
 }
