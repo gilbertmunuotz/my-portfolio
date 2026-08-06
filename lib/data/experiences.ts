@@ -28,7 +28,7 @@ export const experiences: Experience[] = [
   },
   {
     id: "apiconference-2026",
-    year: "February 2026 - Present",
+    year: "January 2026 - Present",
     role: "Project Manager",
     company: "API Conference Tanzania",
     url: "https://apicon.or.tz",

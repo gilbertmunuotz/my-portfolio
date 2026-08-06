@@ -26,17 +26,20 @@ export default function Services() {
         description="My core engineering capabilities across backend systems, cross-platform applications, and performance-driven architecture."
       />
 
-      <div className="grid gap-6 sm:grid-cols-2">
+      <div className="grid auto-rows-fr gap-6 sm:grid-cols-2">
         {services.map((s, i) => {
           const Icon = iconMap[s.icon]
           return (
             <Reveal key={s.id} delay={i * 0.12}>
-              <Card className="transition-[transform,box-shadow] duration-300 ease-out hover:-translate-y-1 hover:shadow-md">
-                <CardHeader className="flex flex-row items-center gap-4">
-                  <Icon className="h-6 w-6 text-brand" aria-hidden />
+              <Card
+                className="flex h-full flex-col transition-[transform,box-shadow] duration-300 ease-out hover:-translate-y-1 hover:shadow-md">
+                <CardHeader className="flex flex-row items-start gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand/10">
+                    <Icon className="h-5 w-5 text-brand" aria-hidden />
+                  </div>
                   <CardTitle className="text-lg">{s.title}</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex flex-1">
                   <CardDescription className="text-base">
                     {s.description}
                   </CardDescription>
