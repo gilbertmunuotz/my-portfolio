@@ -27,11 +27,11 @@ export const experiences: Experience[] = [
     url: "https://emaiconference.com",
   },
   {
-    id: "momentam-2025",
-    year: "Oct 2025 - Present",
-    role: "Lead Full-Stack Developer",
-    company: "Momentam.io",
-    url: "https://momentam.io",
+    id: "apiconference-2026",
+    year: "February 2026 - Present",
+    role: "Project Manager",
+    company: "API Conference Tanzania",
+    url: "https://apicon.or.tz",
   },
   {
     id: "sgi-2026",

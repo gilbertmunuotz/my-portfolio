@@ -7,21 +7,21 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Momentam Apps(Web & Mobile)",
+    title: "APICon Tanzania Community",
     description:
-      "Real-time event photography marketplace where users can book photographers, select photo packages, and receive images instantly, while photographers manage bookings and deliver photos seamlessly.",
-    tech: ["React Native", "Expo", "Node.js", "JWT", "REST API's"],
-    link: "https://momentam.io",
+      "Project Manager for APICon Tanzania Community, leading conference planning, partnerships, and community engagement to advance API development, security, and innovation in Tanzania.",
+    tech: ["Leadership", "Project Management", "Strategic Planning", "Event Management"],
+    link: "https://apicon.or.tz",
   },
   {
-    title: "emAI Conference Website",
+    title: "emAI Conference",
     description:
       "Official event platform for the EnhanceMind AI Conference, designed to support large-scale engagement, Hands-on Workshops, speaker showcases, Networking Opportunities and inclusive AI-focused programming.",
     tech: ["Next.js", "Shadcn UI", "Framer Motion", "Tailwind CSS"],
     link: "https://emaiconference.com",
   },
   {
-    title: "Fizbuz",
+    title: "Fizbuz Expense Tracker",
     description:
       "A full-stack, responsive expense tracking web application with intuitive UI, featuring interactive income and expense visualizations, monthly summaries, categorized transaction management, and real-time updates.",
     tech: ["React.js", "Redux Toolkit", "Express.js", "Sequelize", "Chart.js", "MySQL", "Render"],
@@ -35,7 +35,7 @@ export const projects: Project[] = [
     link: "https://github.com/gilbertmunuotz/remoteok",
   },
   {
-    title: "Cyra Recipe",
+    title: "Cyra Recipe Web App",
     description:
       "Online Recipe search app that retrieves detailed cooking instructions, ingredient lists and time frame based on user input queries. Just type in your ingredients or dish name and browse through a variety of recipes tailored to meet your specific needs.",
     tech: ["React", "Tailwind CSS", "Vercel", "REST API's",],
