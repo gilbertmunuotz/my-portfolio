@@ -21,20 +21,22 @@ export default function ProjectsSection() {
         accent="Projects"
       />
 
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid auto-rows-fr gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <Reveal key={project.title} delay={index * 0.1}>
-            <Card className="transition-[transform,box-shadow] duration-300 ease-out hover:-translate-y-1 hover:shadow-md">
+            <Card
+              className="flex h-full flex-col transition-[transform,box-shadow] duration-300 ease-out hover:-translate-y-1 hover:shadow-md">
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
               </CardHeader>
 
-              <CardContent className="space-y-4">
-                <p className="text-sm text-muted-foreground">
+              <CardContent className="flex flex-1 flex-col space-y-4">
+                <p
+                  className="line-clamp-4 text-sm leading-6 text-muted-foreground">
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex min-h-16 flex-wrap content-start gap-2">
                   {project.tech.map((t, i) => (
                     <Badge
                       key={`${project.title}-${t}-${i}`}
@@ -50,8 +52,7 @@ export default function ProjectsSection() {
                   asChild
                   variant="outline"
                   size="sm"
-                  className="mt-2 hover:border-brand hover:text-brand"
-                >
+                  className="mt-auto w-fit hover:border-brand hover:text-brand">
                   <a
                     href={project.link}
                     target="_blank"

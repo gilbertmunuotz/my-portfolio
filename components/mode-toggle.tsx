@@ -17,10 +17,10 @@ export function ModeToggle() {
 
   return (
     <Button
-      variant="outline"
+      variant="ghost"
       size="icon"
       type="button"
-      className="relative"
+      className="relative rounded-full border-0 shadow-none hover:bg-accent cursor-pointer"
       disabled={!mounted}
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
       onClick={() => setTheme(isDark ? "light" : "dark")}
