@@ -10,30 +10,61 @@ export default function ContactSection() {
     <Section
       id="contact"
       aria-labelledby="contact-heading"
-      className="scroll-mt-20 py-24 text-center"
+      className="scroll-mt-20"
     >
-      <Reveal>
+      <Reveal className="max-w-2xl">
+
         <h2
           id="contact-heading"
-          className="text-3xl font-bold tracking-tight"
+          className="
+            text-4xl
+            font-bold
+            tracking-[-0.03em]
+            sm:text-5xl
+          "
         >
-          Let’s Build Something <span className="text-brand">Great</span>
+          Let&apos;s Build Something Great
         </h2>
 
-        <p className="my-8 text-base text-muted-foreground">
+
+        <p
+          className="
+            my-8
+            max-w-xl
+            text-base
+            leading-7
+            text-muted-foreground
+            sm:text-lg
+            sm:leading-8
+          "
+        >
           Open to collaborations, freelance opportunities, and product-focused
           engineering roles.
         </p>
 
-        <Button asChild size="lg" variant="brand">
+
+        <Button
+          asChild
+          size="lg"
+          variant="brand"
+          className="
+            font-medium
+            tracking-tight
+          "
+        >
           <Link
             href="mailto:officialgilbert45@gmail.com"
             className="inline-flex items-center gap-2"
           >
-            <Mail className="h-5 w-5" aria-hidden />
+            <Mail
+              className="h-5 w-5"
+              aria-hidden
+            />
+
             Contact Me
           </Link>
         </Button>
+
       </Reveal>
     </Section>
   )

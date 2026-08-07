@@ -1,26 +1,156 @@
+"use client"
+
+import { m, type Variants } from "framer-motion"
+import { ArrowDown } from "lucide-react"
+import { TypeAnimation } from "react-type-animation"
+
+const container: Variants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+}
+
+const item: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+}
+
 export default function Home() {
   return (
-    <section
+    <m.section
       id="about"
-      aria-labelledby="hero-heading"
-      className="scroll-mt-20"
+      className="flex h-full flex-col justify-center"
+      variants={container}
+      initial="hidden"
+      animate="show"
     >
-      <h1
-        id="hero-heading"
-        className="mb-4 text-2xl font-bold tracking-tight text-foreground"
+      <m.span
+        variants={item}
+        className="
+          font-mono
+          text-sm
+          font-medium
+          uppercase
+          tracking-[0.2em]
+          text-brand
+          sm:text-base
+        "
       >
-        Gilbert Munuo - Full Stack Developer
-      </h1>
-      <p className="text-[17px] leading-7 text-muted-foreground">
-        With over 4 years of experience as a full-stack developer, I build
-        scalable web and mobile applications focused on performance, security, and
-        usability. I specialize in crafting efficient solutions using modern
-        technologies such as React Native, Next.js, Prisma, and MySQL. From
-        optimizing large datasets to implementing robust authentication systems,
-        I focus on solving complex engineering challenges and delivering
-        impactful results. I value collaboration, continuous learning, and
-        building meaningful, user-centered products.
-      </p>
-    </section>
+        👋 Hi, I&apos;m
+      </m.span>
+
+
+      <m.h1
+        variants={item}
+        className="
+          mt-4
+          text-6xl
+          font-extrabold
+          leading-[0.95]
+          tracking-[-0.05em]
+          sm:text-7xl
+          lg:text-8xl
+        "
+      >
+        Gilbert
+      </m.h1>
+
+
+      <m.h2
+        variants={item}
+        className="
+          mt-6
+          font-mono
+          text-xl
+          font-medium
+          tracking-tight
+          text-muted-foreground
+          sm:text-2xl
+        "
+      >
+        <TypeAnimation
+          sequence={[
+            "Software Engineer..",
+            2000,
+            "Full Stack Developer..",
+            2000,
+            "AI Engineer...",
+            2000,
+            "ML Enthusiast...",
+            2000,
+          ]}
+          wrapper="span"
+          speed={50}
+          repeat={Infinity}
+          cursor={true}
+        />
+      </m.h2>
+
+
+      <m.p
+        variants={item}
+        className="
+          mt-8
+          max-w-xl
+          text-base
+          leading-7
+          text-muted-foreground
+          sm:text-lg
+          sm:leading-8
+        "
+      >
+        I build scalable web, mobile, and AI-powered applications focused on
+        performance, usability, and solving real-world problems.
+      </m.p>
+
+
+      <m.div
+        variants={item}
+        whileHover={{ y: -3 }}
+        className="mt-10"
+      >
+        <a
+          href="#projects"
+          className="
+            group
+            inline-flex
+            items-center
+            gap-2
+            rounded-full
+            bg-brand
+            px-7
+            py-3
+            text-sm
+            font-semibold
+            tracking-tight
+            text-white
+            shadow-lg
+            transition-all
+            hover:scale-105
+          "
+        >
+          Explore My Work
+
+          <ArrowDown
+            size={18}
+            className="transition-transform group-hover:translate-y-1"
+          />
+        </a>
+      </m.div>
+
+    </m.section>
   )
 }

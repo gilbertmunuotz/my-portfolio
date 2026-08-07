@@ -4,15 +4,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { MotionProvider } from "@/components/motion-provider"
 import { GeistMono } from "geist/font/mono"
 import { GeistSans } from "geist/font/sans"
-import { Newsreader } from "next/font/google"
 import Script from "next/script"
 
-const newsreader = Newsreader({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-newsreader",
-  weight: ["400", "500", "600", "700"],
-})
 
 export const metadata: Metadata = {
   title: "Gilbert Munuo | Full-Stack Developer",
@@ -54,7 +47,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
   return (
     <html
       lang="en"
-      className={`${GeistSans.variable} ${GeistMono.variable} ${newsreader.variable}`}
+      className={`${GeistSans.variable} ${GeistMono.variable}`}
       suppressHydrationWarning
     >
       <body>
